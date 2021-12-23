@@ -53,7 +53,10 @@ def single_gpu_test(model,
                     result[i],
                     show=show,
                     out_file=out_file,
-                    score_thr=show_score_thr)
+                    score_thr=show_score_thr,
+                    bbox_color=(0, 0, 255),
+                    text_color=(255, 255, 255)
+               )
 
         # encode mask results
         if isinstance(result[0], tuple):
